@@ -24,7 +24,7 @@ const Hero = () => {
         </div>
         
         <h1 className="text-4xl sm:text-6xl font-bold text-buddy-gray mb-6">
-          The Best Friend of DeFi
+          Buddy is a good boy
         </h1>
         
         <p className="text-xl sm:text-2xl text-buddy-gray/80 mb-8">
