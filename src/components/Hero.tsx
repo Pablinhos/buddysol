@@ -31,7 +31,7 @@ const Hero = () => {
           Woofing to the Moon! 🚀
         </p>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
           <button
             onClick={playBark}
             className="px-8 py-4 bg-buddy-orange text-white rounded-full font-bold text-lg hover:bg-buddy-orange/90 transition-colors flex items-center gap-2 group"
@@ -41,11 +41,17 @@ const Hero = () => {
           </button>
           
           <a
-            href="#how-to-buy"
+            href="https://dexscreener.com/solana/6VcgPRirH122Dvzcvj4owVno963arZBaZCzb3qWfpump"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-8 py-4 bg-buddy-blue text-white rounded-full font-bold text-lg hover:bg-buddy-blue/90 transition-colors"
           >
             Buy $BUDDY
           </a>
+        </div>
+
+        <div className="text-sm text-buddy-gray/60 font-mono break-all">
+          CA: 6VcgPRirH122Dvzcvj4owVno963arZBaZCzb3qWfpump
         </div>
       </div>
     </div>

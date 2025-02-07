@@ -1,14 +1,13 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { name: "Home", href: "#home" },
-    { name: "Tokenomics", href: "#tokenomics" },
-    { name: "How to Buy", href: "#how-to-buy" },
-    { name: "Community", href: "#community" },
+    { name: "Home", href: "/" },
+    { name: "Community", href: "/community" },
   ];
 
   return (
@@ -16,27 +15,27 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
-            <a href="#" className="flex items-center">
+            <Link to="/" className="flex items-center">
               <img
                 src="/lovable-uploads/0921f0fa-5e58-49a6-8f94-251a78de1fbe.png"
                 alt="Buddy Logo"
                 className="h-8 w-8"
               />
               <span className="ml-2 text-xl font-bold text-buddy-gray">$BUDDY</span>
-            </a>
+            </Link>
           </div>
           
           {/* Desktop menu */}
           <div className="hidden md:block">
             <div className="ml-10 flex items-center space-x-4">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
+                  to={item.href}
                   className="text-buddy-gray hover:text-buddy-orange px-3 py-2 rounded-md text-sm font-medium transition-colors"
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
@@ -57,14 +56,14 @@ const Navbar = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
+                  to={item.href}
                   className="text-buddy-gray hover:text-buddy-orange block px-3 py-2 rounded-md text-base font-medium"
                   onClick={() => setIsOpen(false)}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </div>
           </div>
