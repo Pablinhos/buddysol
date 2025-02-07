@@ -3,7 +3,7 @@ import { Volume2 } from "lucide-react";
 
 const Hero = () => {
   const { toast } = useToast();
-  const audio = new Audio("/bark.mp3");
+  const audio = new Audio("./audio/dog-bark.mp3");
 
   const playBark = () => {
     // Play the bark sound
