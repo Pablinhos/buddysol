@@ -3,14 +3,12 @@ import { Volume2 } from "lucide-react";
 
 const Hero = () => {
   const { toast } = useToast();
-  const audio = new Audio("../audio/dog-bark.mp3");
+  const audio = new Audio("/audio/dog-bark.mp3"); // Usa un percorso assoluto
 
   const playBark = () => {
-    // Play the bark sound
-    audio.currentTime = 0; // Reset audio to start
+    audio.currentTime = 0; // Reset audio a inizio
     audio.play().catch(console.error);
-    
-    // Show the toast notification
+
     toast({
       title: "Woof! Woof! 🐕",
       description: "To the moon! 🚀",
@@ -28,11 +26,11 @@ const Hero = () => {
             className="w-48 h-48 mx-auto"
           />
         </div>
-        
+
         <h1 className="text-4xl sm:text-6xl font-bold text-buddy-gray mb-6">
           Buddy is a good boy
         </h1>
-        
+
         <p className="text-xl sm:text-2xl text-buddy-gray/80 mb-8">
           Woofing to the Moon! 🚀
         </p>
@@ -45,7 +43,7 @@ const Hero = () => {
             <Volume2 className="w-5 h-5 group-hover:animate-bark" />
             Make Buddy Bark!
           </button>
-          
+
           <a
             href="https://dexscreener.com/solana/6VcgPRirH122Dvzcvj4owVno963arZBaZCzb3qWfpump"
             target="_blank"
