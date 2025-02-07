@@ -3,8 +3,14 @@ import { Volume2 } from "lucide-react";
 
 const Hero = () => {
   const { toast } = useToast();
+  const audio = new Audio("/bark.mp3");
 
   const playBark = () => {
+    // Play the bark sound
+    audio.currentTime = 0; // Reset audio to start
+    audio.play().catch(console.error);
+    
+    // Show the toast notification
     toast({
       title: "Woof! Woof! 🐕",
       description: "To the moon! 🚀",
