@@ -12,7 +12,7 @@ const Community = () => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
           <a
-            href="https://t.me/buddysolana"
+            href="https://t.me/BUDDY_CTOO"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
@@ -22,7 +22,7 @@ const Community = () => {
           </a>
           
           <a
-            href="https://x.com/buddysolana"
+            href="https://x.com/Buddy_CTO"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center gap-3 p-6 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow"
